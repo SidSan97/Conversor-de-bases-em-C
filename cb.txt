@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>                    /*By Sidnei Santiago*/
 #include <stdlib.h>
 #include <locale.h>
 #include <math.h>
@@ -13,12 +13,12 @@ int main()
    do{
    printf("\n\t\t============CONVERSOR DE BASES============\n");
 
-   printf("Qual conversão deseja fazer? \n");
+   printf("Qual conversÃ£o deseja fazer? \n");
 
    printf("(1) De decimal para hexadecimal \n");
    printf("(2) De hexadecimal para decimal \n");
-   printf("(3) De decimal para binário \n");
-   printf("(4) De binário para decimal \n");
+   printf("(3) De decimal para binÃ¡rio \n");
+   printf("(4) De binÃ¡rio para decimal \n");
    printf("(5) De decimal para octal \n");
    printf("(6) De octal para decimal \n");
    printf("(0) Sair \n");
@@ -30,14 +30,14 @@ int main()
       printf("\nInforme o valor DECIMAL a ser convertido \n");
       scanf("%i", &opcao);
       getchar();
-      printf("O valor %i em hexadecimal é: %x \n", opcao, opcao);
+      printf("O valor %i em hexadecimal Ã©: %x \n", opcao, opcao);
     }
 
    else if (escolha==2)
     {
       printf("\n Informe o valor em HEXADECIAL a ser convertido \n");
       scanf("%x", &opcao);
-      printf("\n O valor %x em decimal é: %i \n",opcao, opcao);
+      printf("\n O valor %x em decimal Ã©: %i \n",opcao, opcao);
     }
 
    else if (escolha==3)
@@ -45,26 +45,26 @@ int main()
       printf("\n Informe o valor DECIMAL a ser convertido: \n");
       scanf("%i", &opcao);
       itoa(opcao, bin, 2);
-      printf("\n O número %i em binário é: %s \n", opcao, bin);
+      printf("\n O nÃºmero %i em binÃ¡rio Ã©: %s \n", opcao, bin);
     }
 
    else if (escolha==4)
     {
-      printf("\nInforme o valor binário a ser convertido: \t");
+      printf("\nInforme o valor binÃ¡rio a ser convertido: \t");
       scanf("%d", &opcao);
       for(int i = 0; opcao > 0; i++)
        {
          dec = dec + pow(2, i) * (opcao % 10);
          opcao /= 10;
        }
-      printf("\n Decimal equivalente ao valor binário informado é: >> %d\n", dec);
+      printf("\n Decimal equivalente ao valor binÃ¡rio informado Ã©: >> %d\n", dec);
     }
 
     else if (escolha==5)
     {
         printf("\nInforme o valor em DECIMAL: \n");
         scanf("%i", &opcao);
-        printf("\n O valor %i em octal é: %o \n", opcao, opcao);
+        printf("\n O valor %i em octal Ã©: %o \n", opcao, opcao);
     }
 
     else if (escolha==6)
